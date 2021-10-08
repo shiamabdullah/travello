@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-
+import django_heroku
 from pathlib import Path
 
 
@@ -81,10 +81,11 @@ WSGI_APPLICATION = 'travel.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'travel',
-        'USER' : 'postgres',
-        'PASSWORD' : 'root',
-        'HOST' : 'localhost'
+        'NAME': 'da1ln0opnboag2',
+        'USER' : 'nklijkditkxjzu',
+        'PASSWORD' : '1e2dc5f6d6ec1c41f05848b41cade6ec84e3d2b74b3ae6c00f81f9c22aeca342',
+        'HOST' : 'ec2-44-198-29-193.compute-1.amazonaws.com',
+        'PORT' : '5432'
     }
 }
 
@@ -133,6 +134,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'assets')
 
 MEDIA_URL='/media/'
 MEDIA_ROOT =os.path.join(BASE_DIR,'media')
+django_heroku.settings(locals())
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
