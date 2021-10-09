@@ -1,4 +1,4 @@
-# Read Me Template
+# Travello
 
 [Take a quick peek in heroku](https://travel-django-travello.herokuapp.com/)
 
